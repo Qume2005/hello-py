@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "hello-py"
+version = "0.1.0"
+description = "Hello python!"
+authors = ["Qume <qume2005@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.packages]]
+include = "app"
+from = "src"
+
+[[tool.poetry.packages]]
+include = "tasks"
+from = "src"
+
+[tool.poetry.scripts]
+app = "app:main"
+task1 = "tasks:task1"
+task2 = "tasks:task2"
+task3 = "tasks:task3"
+task4 = "tasks:task4"
+task5 = "tasks:task5"
+
