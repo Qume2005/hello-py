@@ -15,15 +15,10 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [[tool.poetry.packages]]
-include = "app"
-from = "src"
-
-[[tool.poetry.packages]]
 include = "tasks"
 from = "src"
 
 [tool.poetry.scripts]
-app = "app:main"
 task1 = "tasks:task1"
 task2 = "tasks:task2"
 task3 = "tasks:task3"
