@@ -18,7 +18,13 @@
 
 
 
-### 初始化python虚拟环境
+### 首次需初始化依赖&虚拟环境
+
+`poetry install`
+
+
+
+### 启动虚拟环境
 
 `poetry shell`
 
